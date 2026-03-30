@@ -25,17 +25,27 @@ encoded = base64.b64encode(command.encode()).decode()
 decoded = base64.b64decode(encoded).decode()
 ```
 ## Red Team Application
+
 ->Hide reverse shell commands from plain text detection
+
 ->Transfer binary files through text-only channels
+
 ->Obfuscate C2 communication
+
 ->Bypass simple string-based detection rules
 
 ## Limitations
+
 ->Base64 alone is NOT encryption. A defender can decode it instantly. Real evasion requires:
+
 ->Base64 + XOR
+
 ->AES encryption
+
 ->Custom encoding
+
 ->Packing/compression
 
 ### Next
+
 Day 06: paramiko — SSH attacks and lateral movement
